@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Insights, Home</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; margin: 0; line-height: 1.5; }
+    header { padding: 16px; background: #0e2540; color: white; }
+    header .wrap { display: flex; align-items: center; gap: 16px; }
+    header img { width: 220px; height: auto; }
+    nav { background: #122b4a; padding: 10px 16px; }
+    nav a { color: #e8f0ff; margin-right: 14px; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    main { padding: 20px; max-width: 1100px; margin: 0 auto; }
+    .articles { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .card { border: 1px solid #d9dfeb; border-radius: 8px; overflow: hidden; background: white; }
+    .card img { width: 100%; height: auto; display: block; }
+    .card-content { padding: 14px; }
+    .card h3 { margin-top: 0; }
+    footer { background: #0e2540; color: #cfe1ff; padding: 20px; margin-top: 28px; }
+    footer a { color: #cfe1ff; margin-right: 10px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <img src="images/logo.png" alt="Tech Insights logo">
+      <div>
+        <h1 style="margin: 0;">Tech Insights</h1>
+        <p style="margin: 4px 0 0;">Your Source for Technology News and Reviews</p>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="comparison.html">Product Comparison</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+  <main>
+    <section>
+      <h2>Featured Articles</h2>
+      <div class="articles">
+        <article class="card">
+          <img src="images/article1.jpg" alt="Robotics and AI breakthroughs illustration">
+          <div class="card-content">
+            <h3>AI Trends for 2024</h3>
+            <p>Artificial intelligence continues to evolve with new models and better on device performance. We explore how these changes will shape privacy, productivity, and creativity for everyday users and professionals.</p>
+            <p><a href="#" title="Read more about AI trends">Read More</a></p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/article2.jpg" alt="Collection of new gadgets on a desk">
+          <div class="card-content">
+            <h3>Top Laptops for Students</h3>
+            <p>Battery life, keyboard feel, and screen quality are the top priorities. We compare the latest models, then share tips for choosing the right combination of CPU, RAM, and storage for your classes.</p>
+            <p><a href="#" title="Read more laptop reviews">Read More</a></p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/article3.jpg" alt="Shield icon that represents cybersecurity">
+          <div class="card-content">
+            <h3>Staying Safe Online</h3>
+            <p>Phishing attempts and account takeovers continue to rise. Learn how passkeys, two factor authentication, and password managers can help you protect your digital identity across services.</p>
+            <p><a href="#" title="Read more about online safety">Read More</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 Tech Insights. All rights reserved.</p>
+    <p>
+      <a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.twitter.com" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+      <a href="mailto:info@techinsights.com">Email Us</a>
+    </p>
+  </footer>
+</body>
+</html>

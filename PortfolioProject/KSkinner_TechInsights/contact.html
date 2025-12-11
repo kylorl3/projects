@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Insights, Contact Us</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; margin: 0; line-height: 1.5; }
+    header { padding: 16px; background: #0e2540; color: white; }
+    header .wrap { display: flex; align-items: center; gap: 16px; }
+    header img { width: 220px; height: auto; }
+    nav { background: #122b4a; padding: 10px 16px; }
+    nav a { color: #e8f0ff; margin-right: 14px; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    main { padding: 20px; max-width: 900px; margin: 0 auto; }
+    fieldset { border: 1px solid #cfd7e6; margin-bottom: 16px; padding: 14px; }
+    legend { font-weight: bold; }
+    label { display: block; margin: 10px 0 6px; }
+    input, select, textarea, button { font-size: 16px; padding: 8px; width: 100%; max-width: 100%; box-sizing: border-box; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .checkboxes label { display: inline; margin-left: 8px; }
+    button[type="submit"] { width: auto; background: #0e2540; color: white; border: none; border-radius: 4px; padding: 10px 16px; cursor: pointer; }
+    button[type="submit"]:hover { opacity: 0.9; }
+    footer { background: #0e2540; color: #cfe1ff; padding: 20px; margin-top: 28px; }
+    footer a { color: #cfe1ff; margin-right: 10px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <img src="images/logo.png" alt="Tech Insights logo">
+      <div>
+        <h1 style="margin: 0;">Tech Insights</h1>
+        <p style="margin: 4px 0 0;">Your Source for Technology News and Reviews</p>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="comparison.html">Product Comparison</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+  <main>
+    <h2>Contact Us</h2>
+    <form action="submit-contact.php" method="post" novalidate>
+      <fieldset>
+        <legend>Your Information</legend>
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" name="full-name" required>
+
+        <div class="row">
+          <div>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="555-123-4567">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Inquiry</legend>
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject" required>
+          <option value="">Please select</option>
+          <option>General Question</option>
+          <option>Technical Support</option>
+          <option>Product Review Request</option>
+          <option>Partnership Opportunity</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Communication Preferences</legend>
+        <div>
+          <input type="checkbox" id="newsletter" name="newsletter">
+          <label class="checkboxes" for="newsletter">Subscribe to newsletter</label>
+        </div>
+        <div>
+          <input type="checkbox" id="terms" name="terms" required>
+          <label class="checkboxes" for="terms">I agree to the Terms and Conditions</label>
+        </div>
+      </fieldset>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+  <footer>
+    <p>© 2024 Tech Insights. All rights reserved.</p>
+    <p>
+      <a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.twitter.com" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+      <a href="mailto:info@techinsights.com">Email Us</a>
+    </p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solar System: A Mini Showcase — Home</title>
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; margin: 0; line-height: 1.6; }
+    header, nav, main, footer { max-width: 1000px; margin: 0 auto; padding: 1rem; }
+    header { background: #f5f5f5; }
+    nav a { margin-right: 1rem; text-decoration: none; color: #0a4; }
+    figure { margin: 1rem 0; }
+    figcaption { font-size: 0.95rem; color: #333; }
+    .card { background:#fff; border:1px solid #e5e5e5; border-radius:.75rem; padding:1rem; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Solar System: A Mini Showcase</h1>
+    <p>Explore the Sun, planets, and the patterns that shape our cosmic neighborhood.</p>
+  </header>
+
+  <nav aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="videos.html">Video Gallery</a>
+    <a href="audio.html">Audio Gallery</a>
+  </nav>
+
+  <main>
+    <section class="card" aria-labelledby="featured">
+      <h2 id="featured">Featured Video  -  The inner planets Era (1986–1991)</h2>
+      <figure>
+        <video width="640" height="360" controls poster="images/poster1.jpg">
+          <source src="videos/video1.webm" type="video/webm" />
+          <source src="videos/video1.mp4" type="video/mp4" />
+          <p>
+            Your browser cannot play the video. You can
+            <a href="videos/video1.mp4" download>download the MP4</a> or
+            <a href="videos/video1.webm" download>download the WebM</a> file.
+          </p>
+        </video>
+        <figcaption>A minimalist animation showing circular orbits of the inner planets around the Sun.</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="eras">
+      <h2 id="eras">Topics</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Inner Planets</h3>
+          <p>Mercury, Venus, Earth, and Mars orbit close to the Sun and complete revolutions relatively quickly.</p>
+        </div>
+        <div class="card">
+          <h3>Gas Giants</h3>
+          <p>Jupiter and Saturn dominate with massive sizes and many moons; Uranus and Neptune are the ice giants.</p>
+        </div>
+        <div class="card">
+          <h3>Dwarf Planets</h3>
+          <p>Smaller worlds like Pluto and Eris follow elongated paths and offer clues to the Solar System's history.</p>
+        </div>
+        <div class="card">
+          <h3>Orbits and Gravity</h3>
+          <p>Gravitational forces set planets into orbital motion and keep them bound to the Sun.</p>
+        </div>
+        <div class="card">
+          <h3>Phases and Eclipses</h3>
+          <p>Alignments produce lunar phases and, on rare occasions, solar and lunar eclipses.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kylor Skinner </p>
+  </footer>
+</body>
+</html>

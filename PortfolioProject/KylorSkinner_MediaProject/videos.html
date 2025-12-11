@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solar System: A Mini Showcase — Videos</title>
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; margin: 0; line-height: 1.6; }
+    header, nav, main, footer { max-width: 1000px; margin: 0 auto; padding: 1rem; }
+    header { background: #f5f5f5; }
+    nav a { margin-right: 1rem; text-decoration: none; color: #0a4; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1rem; }
+    figure { margin: 0; }
+    figcaption { font-size: 0.95rem; color: #333; margin-top: .5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Video Gallery  -  Key Eras</h1>
+    <p>Two short clips that visualize simple orbital motions.</p>
+  </header>
+
+  <nav aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="videos.html" aria-current="page">Video Gallery</a>
+    <a href="audio.html">Audio Gallery</a>
+  </nav>
+
+  <main>
+    <div class="grid">
+      <figure>
+        <video width="640" height="360" controls poster="images/poster1.jpg">
+          <source src="videos/video1.webm" type="video/webm" />
+          <source src="videos/video1.mp4" type="video/mp4" />
+          <p>
+            Your browser cannot play the video. You can
+            <a href="videos/video1.mp4" download>download the MP4</a> or
+            <a href="videos/video1.webm" download>download the WebM</a> file.
+          </p>
+        </video>
+        <figcaption>Inner Planet Orbits - Mercury, Venus, Earth, and Mars paths.</figcaption>
+      </figure>
+
+      <figure>
+        <video width="640" height="360" controls poster="images/poster2.jpg">
+          <source src="videos/video2.webm" type="video/webm" />
+          <source src="videos/video2.mp4" type="video/mp4" />
+          <p>
+            Your browser cannot play the video. You can
+            <a href="videos/video2.mp4" download>download the MP4</a> or
+            <a href="videos/video2.webm" download>download the WebM</a> file.
+          </p>
+        </video>
+        <figcaption>Gas Giants Orbits - simplified view of Jupiter and Saturn with moons.</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kylor Skinner</p>
+  </footer>
+</body>
+</html>

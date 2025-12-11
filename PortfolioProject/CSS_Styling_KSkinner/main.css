@@ -1,0 +1,49 @@
+/* Kylor Skinner - Wk12: Hands-On Project: CSS Text Styling */
+
+/* Part 3: Body Text Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #333333;
+}
+
+/* Part 2: Heading Styles */
+h1 {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, sans-serif;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #2c3e50;
+}
+
+h2 {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    color: #3498db;
+}
+
+/* Part 3: Paragraph text */
+p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Part 4: List Styles */
+ul {
+    line-height: 1.6;
+    margin-left: 40px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Part 5: Link Styles */
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+}
